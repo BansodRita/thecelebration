@@ -10,7 +10,7 @@ import { SigleProductComponent } from './components/sigle-product/sigle-product.
 
 const routes: Routes = [
   {path:'', component:LayoutPageComponent,children:[
-    { path: '', component: MainComponent },
+    { path: '/', component: MainComponent },
     { path: 'main', component: MainComponent },
     { path: 'product', component:GalleryComponent },
     { path: 'contact', component: ContactUsComponent },
