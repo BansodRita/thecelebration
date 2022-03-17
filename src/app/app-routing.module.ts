@@ -9,14 +9,17 @@ import { ProductComponent } from './components/product/product.component';
 import { SigleProductComponent } from './components/sigle-product/sigle-product.component';
 
 const routes: Routes = [
-  
-    // path: '', component: LayoutPageComponent,
+  {path:'', component:LayoutPageComponent,children:[
     { path: '', component: MainComponent },
     { path: 'main', component: MainComponent },
-    { path: 'gallery', component: GalleryPageComponent },
+    { path: 'product', component:GalleryComponent },
     { path: 'contact', component: ContactUsComponent },
     { path: 'single', component: SigleProductComponent },
     { path: 'galleryimg', component: ProductComponent },
+  ]}
+  
+   
+    
   
   
 ];
